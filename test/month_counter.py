@@ -2,7 +2,7 @@ def get_days_in_month(month):
     if month == 1:
         return 31
     elif month == 2:
-        return 28  # Not accounting for leap years
+        return 28
     elif month == 3:
         return 31
     elif month == 4:
@@ -30,5 +30,9 @@ def main():
     month = int(input("Enter the number of the month (1-12): "))
     days = get_days_in_month(month)
 
-    if month == 31:
+    if 1 <= month <= 12:
         print(f"The number of days in month {month} is {days}")
+    else: print(days)
+
+
+main()

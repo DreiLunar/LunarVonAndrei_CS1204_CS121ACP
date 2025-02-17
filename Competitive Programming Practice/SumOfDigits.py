@@ -1,6 +1,7 @@
-def sum_of_digits(n):
-    return sum(int(digits) for digits in str(n))
+nums = []
+values = input("Enter number: ")
+nums.append(values)
 
-if __name__ == "__main__":
-    n = int(input("Enter N: "))
-    print (f"Sum of digits: ", sum_of_digits(n))
+num2 = [int(digit) for digit in nums[0]]
+sum(num2)
+print(num2)
